@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://apiv2.wisecar.co/';
-
+const BASE_URL = 'http://13.211.146.21:8080/';
+//http://api.zhechundemo.com:8080/
 //const BASE_URL = 'http://localhost:8080/';
 
 export function postRequest<T>(data: any | null, suffix: string, header: any | null) {

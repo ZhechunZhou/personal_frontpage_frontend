@@ -8090,6 +8090,11 @@ no-case@^3.0.4:
     lower-case "^2.0.2"
     tslib "^2.0.3"
 
+node-bin-setup@^1.0.0:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/node-bin-setup/-/node-bin-setup-1.0.6.tgz#4b5c9bb937ece702d7069b36ca78af4684677528"
+  integrity sha512-uPIxXNis1CRbv1DwqAxkgBk5NFV3s7cMN/Gf556jSw6jBvV7ca4F9lRL/8cALcZecRibeqU+5dFYqFFmzv5a0Q==
+
 node-emoji@^1.11.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/node-emoji/-/node-emoji-1.11.0.tgz#69a0150e6946e2f115e9d7ea4df7971e2628301c"
@@ -8194,6 +8199,13 @@ node-sass@^6.0.1:
     sass-graph "2.2.5"
     stdout-stream "^1.4.0"
     "true-case-path" "^1.0.2"
+
+node@^17.1.0:
+  version "17.1.0"
+  resolved "https://registry.yarnpkg.com/node/-/node-17.1.0.tgz#a18a8f388e78381dbaeb00ae7a4414e99fa1ca79"
+  integrity sha512-1gg810R7sKtFkCYMdIhOyYDCuRJZyLvP+lTX8Z9AMAiUdHPoeNu0KQN59CzBud5L/vMtFPkbsCwWOy1aTYOL8g==
+  dependencies:
+    node-bin-setup "^1.0.0"
 
 nopt@^5.0.0:
   version "5.0.0"
@@ -11700,6 +11712,11 @@ toidentifier@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
   integrity sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
+
+tokenize@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/tokenize/-/tokenize-0.0.3.tgz#2a8cb4befe3d7761f5b29e532756eee3bc1a33fe"
+  integrity sha1-Koy0vv49d2H1sp5TJ1bu47waM/4=
 
 tough-cookie@^2.3.3, tough-cookie@~2.5.0:
   version "2.5.0"
