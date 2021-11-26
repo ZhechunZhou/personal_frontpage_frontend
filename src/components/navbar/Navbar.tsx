@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-export const Navbar = () => {
+export const Navbar: React.FC = () => {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
     const [inHome, setInHome] = React.useState(true);
     return (
