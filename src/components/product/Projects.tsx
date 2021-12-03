@@ -2,8 +2,8 @@ import React from "react";
 import {Navbar} from "../navbar/Navbar";
 import {Project} from "./Project";
 
-export const HomePage: React.FC = () => {
+export const Projects: React.FC = () => {
     return (<>
-        <Project id={""} name={""} description={""} picture={""}/>
+        <Project id={""} name={""} tag={""} description={""} picture={""}/>
     </>);
 }
