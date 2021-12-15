@@ -9,14 +9,13 @@ import {BrowserRouter} from 'react-router-dom'
 import './styles/index.css'
 
 ReactDOM.render(
-
-        <Provider store={store}>
-            <PersistGate persistor={persistor}>
-                <BrowserRouter>
-                    <App/>
-                </BrowserRouter>
-            </PersistGate>
-        </Provider>,
+    <Provider store={store}>
+        <PersistGate persistor={persistor}>
+            <BrowserRouter>
+                <App/>
+            </BrowserRouter>
+        </PersistGate>
+    </Provider>,
     document.getElementById("root")
 );
 

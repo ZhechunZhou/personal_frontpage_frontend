@@ -1,5 +1,4 @@
 import React from "react";
-import {Navbar} from "../navbar/Navbar";
 import {Project} from "./Project";
 
 export const Projects: React.FC = () => {

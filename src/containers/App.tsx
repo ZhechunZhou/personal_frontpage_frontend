@@ -1,7 +1,7 @@
 import React from 'react'
-import {Routes, Route,} from 'react-router-dom'
+import {Route, Routes,} from 'react-router-dom'
 import {useDispatch} from "react-redux";
-import {HomePage} from "../components";
+import {HomePage, BlogPage} from "../components";
 
 export const App: React.FC = () => {
     // ===========================================================================
@@ -13,9 +13,10 @@ export const App: React.FC = () => {
     // ===========================================================================
 
     return (
-            <Routes>
-                <Route path="/" element={<HomePage/>}/>
-                <Route path="/home" element={<HomePage/>}/>
-            </Routes>
+        <Routes>
+            <Route path="/" element={<HomePage/>}/>
+            <Route path="/home" element={<HomePage/>}/>
+            <Route path="/blogs" element={<BlogPage/>}/>
+        </Routes>
     )
 }

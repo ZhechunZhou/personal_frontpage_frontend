@@ -7,7 +7,7 @@ const stripeInstance = new Stripe(SECRET_KEY, {
 });
 
 export async function listAllProducts() {
-    console.log("get product");
+    console.log("get project");
     console.log(stripeInstance);
     const products = await stripeInstance.products.list();
     console.log(products);
