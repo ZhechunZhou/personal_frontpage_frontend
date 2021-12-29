@@ -1,0 +1,31 @@
+import React, {useEffect, useState} from "react";
+import {Navbar} from "../navbar/Navbar";
+import {Projects} from "../../types/apis";
+import {SideBar} from "./sidebar/SideBar";
+import {ProjectList} from "./ProjectList";
+
+export const ProjectPage: React.FC = () => {
+    const [projects, setProjects] = useState({} as Projects);
+    const getProject = () => {
+        fetch('./json/projects.json', {
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        }).then(res => res.json()).then(data => setProjects(data))
+    }
+
+    useEffect(() => {
+        getProject()
+    }, [])
+
+    return (<>
+        <Navbar/>
+        <main className="profile-page relative min-h-screen flex">
+            <SideBar/>
+            <div className={"flex flex-wrap"}>
+                <ProjectList projects={projects}/>
+            </div>
+        </main>
+    </>);
+}

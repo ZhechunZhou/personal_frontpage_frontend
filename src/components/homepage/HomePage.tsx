@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useRef, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import {Navbar} from "../navbar/Navbar";
 import {Link} from "react-router-dom";
 import ForceGraph3D, {ForceGraphMethods, GraphData} from 'react-force-graph-3d';
@@ -16,12 +16,14 @@ export const HomePage: React.FC = () => {
         }).then(res => res.json()).then(data => setGraph(data))
     }
 
-useEffect(()=>{getGraph()},[])
+    useEffect(() => {
+        getGraph()
+    }, [])
 
     useEffect(() => {
-        if(fgRef.current){
+        if (fgRef.current) {
             console.log("not undefined")
-            fgRef.current.cameraPosition({z:250})
+            fgRef.current.cameraPosition({z: 250})
         }
     }, [graph])
 
@@ -84,11 +86,10 @@ useEffect(()=>{getGraph()},[])
         </section>
 
 
-        {/*About Me*/
-        }
+        {/*About Me*/}
         <div className="bg-no-repeat bg-center bg-cover z-0 -mb-5 container w-44 mx-auto flex h-40"
              style={{
-                 backgroundImage: `url('octocat.jpeg')`
+                 backgroundImage: `url('image/octocats/octocat.jpeg')`
              }}>
         </div>
         <section className="z-30 bg-black pattern py-20">

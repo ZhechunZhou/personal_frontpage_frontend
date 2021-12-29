@@ -1,0 +1,59 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "name": "Personal Frontpage",
+      "type": "web application",
+      "tag": "React Redux TailwindCSS",
+      "isUpdating": true,
+      "description": "this website itself",
+      "repoLink": "https://github.com/ZhechunZhou/personal_frontpage_frontend",
+      "demoLink": "http://www.zhechundemo.com/",
+      "picture": ""
+    },
+    {
+      "id": 1,
+      "name": "Airport Escort Robot",
+      "type": "web application",
+      "tag": "C# unity",
+      "isUpdating": false,
+      "description": "an survey platform for social robotic research",
+      "repoLink": "https://github.com/ZhechunZhou/personal_frontpage_frontend",
+      "demoLink": "https://zhechunzhou.github.io/airport-game-formal-version/index.html",
+      "picture": ""
+    },
+    {
+      "id": 2,
+      "name": "Django Tweeter Copy",
+      "type": "web application",
+      "tag": "Django jQuery Ajax AWS EC2",
+      "isUpdating": false,
+      "description": "A social media platform with real-time posts, commits",
+      "repoLink": "",
+      "demoLink": "",
+      "picture": ""
+    },
+    {
+      "id": 3,
+      "name": "Carcassone",
+      "type": "Core Java",
+      "tag": "Gradle Gson Swing Java15",
+      "isUpdating": false,
+      "description": "a java swing multiplayer carcassone game",
+      "repoLink": "",
+      "demoLink": "",
+      "picture": ""
+    },
+    {
+      "id": 4,
+      "name": "CPU simulator",
+      "type": "Core Java",
+      "tag": "Gradle Java15",
+      "isUpdating": false,
+      "description": "a CPU simulator parses, compiles and executes Assembly",
+      "repoLink": "",
+      "demoLink": "",
+      "picture": ""
+    }
+  ]
+}

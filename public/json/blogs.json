@@ -1,16 +1,20 @@
-{"blogs": [{
-  "title": "Basic Java Concurrency",
-  "class": "study note",
-  "date": "2021 Jan 1",
-  "description": "multi-thread programming of Java. From atomic operation to Dead Lock prevention.",
-  "link": "https://github.com/ZhechunZhou/Notebooks/blob/main/JavaNote/Concurrency.md",
-  "image": "./image/Java-logo.png"
-},
-  {
-    "title": "Concurrency primitives, libraries, and design patterns",
-    "class": "study note",
-    "date": "2021 Jan 24",
-    "description": "thread pool, executor and concurrent data structure of java.",
-    "link": "https://github.com/ZhechunZhou/Notebooks/blob/main/JavaNote/ConcurrencyMore.md",
-    "image": "./image/Java-logo.png"
-  }]}
+{
+  "blogs": [
+    {
+      "title": "Basic Java Concurrency",
+      "class": "study note",
+      "date": "2021 Jan 1",
+      "description": "multi-thread programming of Java. From atomic operation to Dead Lock prevention.",
+      "link": "https://github.com/ZhechunZhou/Notebooks/blob/main/JavaNote/Concurrency.md",
+      "image": "./image/java-logo.png"
+    },
+    {
+      "title": "Concurrency primitives, libraries, and design patterns",
+      "class": "study note",
+      "date": "2021 Jan 24",
+      "description": "thread pool, executor and concurrent data structure of java.",
+      "link": "https://github.com/ZhechunZhou/Notebooks/blob/main/JavaNote/ConcurrencyMore.md",
+      "image": "./image/java-logo.png"
+    }
+  ]
+}

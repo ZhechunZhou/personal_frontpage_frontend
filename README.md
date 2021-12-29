@@ -84,5 +84,6 @@ here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-
 
 ### Docker command
 
-docker build --no-cache -t zhechun/personal-site-frontend . 
+docker build --no-cache -t zhechun/personal-site-frontend .
+
 docker push zhechun/personal-site-frontend
