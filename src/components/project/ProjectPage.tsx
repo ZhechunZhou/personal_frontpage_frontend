@@ -3,6 +3,8 @@ import {Navbar} from "../navbar/Navbar";
 import {Projects} from "../../types/apis";
 import {SideBar} from "./sidebar/SideBar";
 import {ProjectList} from "./ProjectList";
+import {useSelector} from "react-redux";
+import {getProjectState} from "../../selector";
 
 export const ProjectPage: React.FC = () => {
     const [projects, setProjects] = useState({} as Projects);
@@ -15,9 +17,22 @@ export const ProjectPage: React.FC = () => {
         }).then(res => res.json()).then(data => setProjects(data))
     }
 
+    let filteredProjects = {projects: []} as Projects;
+    let {filter} = useSelector(getProjectState)
+
     useEffect(() => {
         getProject()
     }, [])
+
+    useEffect(() => {
+        filteredProjects = projects
+        if (filter.length != 0) {
+            filteredProjects.projects.filter(function (item) {
+                return item.type === filter
+            })
+        }
+
+    }, [filter, projects])
 
     return (<>
         <Navbar/>

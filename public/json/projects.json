@@ -4,7 +4,7 @@
       "id": 0,
       "name": "Personal Frontpage",
       "type": "web application",
-      "tag": "React Redux TailwindCSS",
+      "tag": "React Redux Saga TailwindCSS",
       "isUpdating": true,
       "description": "this website itself",
       "repoLink": "https://github.com/ZhechunZhou/personal_frontpage_frontend",

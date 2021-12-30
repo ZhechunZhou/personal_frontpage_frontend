@@ -1,6 +1,5 @@
 import React from "react";
-import {ProjectMeta, Projects} from "../../types/apis";
-import {Link} from "react-router-dom";
+import {Projects} from "../../types/apis";
 interface Props {
     projects: Projects;
 }
@@ -79,12 +78,12 @@ export const ProjectList: React.FC<Props> = ({projects}) => {
                                 )}
                             </td>
                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{project.description}</td>
-                            <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                            {project.demoLink.length > 0 && <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                 <a href={project.repoLink}
                                       className="text-indigo-600 hover:text-indigo-900">
                                     show Detail
                                 </a>
-                            </td>
+                            </td>}
                             {project.demoLink.length > 0 && <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                 <a href={project.demoLink}
                                    className="text-indigo-600 hover:text-indigo-900">

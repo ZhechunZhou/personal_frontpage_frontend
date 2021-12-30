@@ -1,11 +1,21 @@
 import React from "react";
+import {clearProjectFilterSaga, setDSFilterSaga, setJavaFilterSaga, setWebFilterSaga} from "../../../sagas/projectSaga";
+import {useDispatch} from "react-redux";
+import {takeLatest} from "redux-saga/effects";
+import {Link} from "react-router-dom";
 
 export const SideBar: React.FC = () => {
+    const dispatch = useDispatch()
+    const _setWebFilter = () => dispatch({type: "SET_WEB_FILTER_SAGA"})
+    const _setJavaFilterSaga = () => dispatch({type: "SET_JAVA_FILTER_SAGA"})
+    const _setDSFilterSaga = () => dispatch({type: "SET_DS_FILTER_SAGA"})
+    const _clearFilterSaga = () => dispatch({type: "CLEAR_PROJECT_FILTER_SAGA"})
+
     return (<>
         <div className="w-3/12 bg-gray-100 rounded p-3 shadow-lg">
             <ul className="space-y-2 text-sm">
                 <li>
-                    <a href="#"
+                    <Link to="/" onClick={_clearFilterSaga}
                        className="flex items-center space-x-3 text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 bg-gray-200 focus:shadow-outline">
                     <span className="text-gray-600">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -15,10 +25,10 @@ export const SideBar: React.FC = () => {
                         </svg>
                     </span>
                         <span>All</span>
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="#"
+                    <Link to="/" onClick={_setWebFilter}
                        className="flex items-center space-x-3 text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:shadow-outline">
                     <span className="text-gray-600">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -28,10 +38,10 @@ export const SideBar: React.FC = () => {
                         </svg>
                     </span>
                         <span>Web Application</span>
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="#"
+                    <Link to="/" onClick={_setDSFilterSaga}
                        className="flex items-center space-x-3 text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
                     <span className="text-gray-600">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -41,10 +51,10 @@ export const SideBar: React.FC = () => {
                         </svg>
                     </span>
                         <span>Distributed System</span>
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="#"
+                    <Link to="/" onClick={_setJavaFilterSaga}
                        className="flex items-center space-x-3 text-gray-700 p-2 rounded-md font-medium hover:bg-gray-200 focus:bg-gray-200 focus:shadow-outline">
                     <span className="text-gray-600">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -54,7 +64,7 @@ export const SideBar: React.FC = () => {
                         </svg>
                     </span>
                         <span>Core java</span>
-                    </a>
+                    </Link>
                 </li>
                 <li>
                     <div
